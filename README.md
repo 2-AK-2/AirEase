@@ -57,6 +57,8 @@ The AI model predicts **when cooling should activate** based on past sensor data
 <h5>✔ Adjusts airflow dynamically (more cooling during peak stress hours).</h5>
 <h5>✔ Self-learns from user responses to improve accuracy.</h5>
 <h5>✔ Uses different models based on external factors.</h5>
+
+
 ---
 
 
