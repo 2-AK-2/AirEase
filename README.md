@@ -40,38 +40,13 @@ AirEase is a wearable device designed to manage **palmar hyperhidrosis** using *
 ---
 
 ## 🛠️ Sensor Threshold Detection Code (C++ for Arduino)
-```cpp
-const int GSR_PIN = A0;
-const int TEMP_PIN = A1;
-const int HEART_RATE_PIN = A2;
-
-int gsrThreshold = 500; // Moisture detection level
-float tempThreshold = 37.5; // Body temperature threshold (°C)
-int heartRateThreshold = 100; // BPM threshold for increased stress
-
-void setup() {
-    Serial.begin(9600);
-}
-
-void loop() {
-    int gsrValue = analogRead(GSR_PIN);
-    float tempValue = (analogRead(TEMP_PIN) * 5.0 / 1023.0) * 100.0;
-    int heartRate = analogRead(HEART_RATE_PIN); // Simulated heart rate reading
-
-    if (gsrValue > gsrThreshold || tempValue > tempThreshold || heartRate > heartRateThreshold) {
-        Serial.println("Sweat detected! Activating cooling system...");
-        // Activate cooling system (Peltier & Fan control logic here)
-    }
-    delay(1000);
-}
-```
 
 ---
 
 ## 🌬️ AI-Powered Cooling Prediction Model
 The AI model predicts **when cooling should activate** based on past sensor data trends. It utilizes:
 
-- **Machine Learning** (Regression & Classification Models).
+- **Machine Learning**.
 - **Historical User Data & Sensor Inputs**.
 - **Real-Time Monitoring**.
 
@@ -79,7 +54,7 @@ The AI model predicts **when cooling should activate** based on past sensor data
 ✔ Predicts when sweating is likely based on past patterns.
 ✔ Adjusts airflow dynamically (more cooling during peak stress hours).
 ✔ Self-learns from user responses to improve accuracy.
-
+✔ Uses different models based on external factors.
 ---
 
 ## 📅 Google Calendar Integration for Smart Cooling
@@ -90,23 +65,6 @@ AirEase syncs with **Google Calendar** to activate cooling during high-priority 
 2. Trigger AI model to preemptively **cool based on upcoming tasks**.
 3. Set **airflow duration** based on event length & stress level prediction.
 
-### **Example Implementation (Python with Google API)**
-```python
-from googleapiclient.discovery import build
-import datetime
-
-def get_calendar_events():
-    service = build('calendar', 'v3', credentials=CREDENTIALS)
-    now = datetime.datetime.utcnow().isoformat() + 'Z'
-    events_result = service.events().list(calendarId='primary', timeMin=now, maxResults=10, singleEvents=True, orderBy='startTime').execute()
-    events = events_result.get('items', [])
-    return events
-
-for event in get_calendar_events():
-    if "important" in event['summary'].lower():
-        print(f"Trigger cooling for event: {event['summary']} at {event['start']['dateTime']}")
-```
-
 ---
 
 ## 🧘 Meditation Breath Analysis (Heart Rate-Based)
@@ -114,35 +72,34 @@ AirEase provides **haptic feedback vibrations** for guided breathing:
 ✔ **Slow vibrations** when heart rate is high.
 ✔ **Gentle pulsations** to guide inhale/exhale cycles.
 
-### **Implementation (Arduino)**
-```cpp
-const int VIBRATION_MOTOR = 9;
-void guidedBreathing(int bpm) {
-    int inhaleDuration = map(bpm, 60, 120, 4000, 2000); // Map HR to breath cycle
-    int exhaleDuration = inhaleDuration;
-    
-    analogWrite(VIBRATION_MOTOR, 150);
-    delay(inhaleDuration);
-    analogWrite(VIBRATION_MOTOR, 0);
-    delay(exhaleDuration);
-}
-```
+---
+
+## 🦌 AI-Based Voice Commands
+- Enable hands-free control of AirEase cooling settings via voice commands.
+- Integrated **speech recognition** model to adjust airflow and settings.
+- Personalized AI assistant to provide real-time feedback.
+- **Dynamic Command Recognition**: The system does **not rely on hardcoded commands** but instead adapts to user speech patterns and preferences over time.
+
+---
+
+## 🌬️ Weather-Based Enhancements
+- Connects to **weather APIs** (OpenWeather, AccuWeather) to **adjust cooling** based on external temperature and humidity.
+- Increases cooling **on hot, humid days** and optimizes power use **in cooler weather**.
+- Suggests optimal times to **pre-cool** before stepping outdoors.
 
 ---
 
 ## 🔗 Future Enhancements
-✅ **Edge AI Integration** for Faster Predictions.
-✅ **Smart Cooling Adjustments** via **Weather API**.
-✅ **Multi-User Adaptability** for Personalized Comfort.
+✅ **Extension to an existing wearable device** 
+✅ **better user interface with increased functionality** 
+✅ **Multi-User Adaptability** 
 
 ---
 
-## 🏆 Contributors
+## 🏆 Contributor
 - **Khushi Mahesh** – Founder, AirEase
 - **Khushi Bhupesh** - Product Development
 - **Akshaya Krishna M** - Tech Lead
-
-📬 Contact: ** **
 
 ---
 
