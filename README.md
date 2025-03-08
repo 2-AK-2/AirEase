@@ -139,9 +139,10 @@ void guidedBreathing(int bpm) {
 
 ## 🏆 Contributors
 - **Khushi Mahesh** – Founder, AirEase
-- **Team Members & Advisors**
+- **Khushi Bhupesh** - Product Development
+- **Akshaya Krishna M** - Tech Lead
 
-📬 Contact: **airease.team@gmail.com**
+📬 Contact: ** **
 
 ---
 
