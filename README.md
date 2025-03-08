@@ -51,7 +51,7 @@ The AI model predicts **when cooling should activate** based on past sensor data
 - **Real-Time Monitoring**.
 
 ### **Key Features**
-####✔ Predicts when sweating is likely based on past patterns.
+✔ ####Predicts when sweating is likely based on past patterns.
 ####✔ Adjusts airflow dynamically (more cooling during peak stress hours).
 ####✔ Self-learns from user responses to improve accuracy.
 ####✔ Uses different models based on external factors.
