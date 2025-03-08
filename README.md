@@ -39,9 +39,10 @@ AirEase is a wearable device designed to manage **palmar hyperhidrosis** using *
 
 ---
 
-## 🛠️ Sensor Threshold Detection Code (C++ for Arduino)
+## 🛠️ Sensor Threshold Detection Code 
 
 ---
+
 
 ## 🌬️ AI-Powered Cooling Prediction Model
 The AI model predicts **when cooling should activate** based on past sensor data trends. It utilizes:
@@ -50,12 +51,14 @@ The AI model predicts **when cooling should activate** based on past sensor data
 - **Historical User Data & Sensor Inputs**.
 - **Real-Time Monitoring**.
 
+
 ### **Key Features**
 ✔ **Predicts when sweating is likely based on past patterns.**
 ✔ **Adjusts airflow dynamically (more cooling during peak stress hours).**
 ✔ **Self-learns from user responses to improve accuracy.**
 ✔ **Uses different models based on external factors.**
 ---
+
 
 ## 📅 Google Calendar Integration for Smart Cooling
 AirEase syncs with **Google Calendar** to activate cooling during high-priority events.
@@ -74,7 +77,7 @@ AirEase provides **haptic feedback vibrations** for guided breathing:
 
 ---
 
-## 🦌 AI-Based Voice Commands
+## 🔊 AI-Based Voice Commands
 - Enable hands-free control of AirEase cooling settings via voice commands.
 - Integrated **speech recognition** model to adjust airflow and settings.
 - Personalized AI assistant to provide real-time feedback.
