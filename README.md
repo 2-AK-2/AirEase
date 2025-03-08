@@ -27,24 +27,15 @@ AirEase is a wearable device designed to manage **palmar hyperhidrosis** using *
 ### **Production Cost per Unit**
 | Component               | Cost (USD) |
 |------------------------|------------|
-| GSR Sensor            | $5         |
-| LM35 Temperature Sensor | $2        |
-| Heart Rate Sensor     | $10        |
-| Peltier Module        | $15        |
-| Miniature Fan        | $5         |
-| Power Unit (Battery) | $10        |
-| PCB & Electronics    | $20        |
-| Casing & Assembly    | $15        |
-| **Total Cost**       | **$72**    |
-
-### **Retail Pricing Strategy**
-- **Target Retail Price**: $199 per unit.
-- **Profit Margin**: ~63%.
-- **Comparison**: Competing wearable cooling devices (e.g., TORRAS COOLiFY) cost **$279**.
-
-### **Additional Revenue Streams**
-- **Subscription-based app features** ($4.99/month for personalized cooling plans & analytics).
-- **B2B Sales & Corporate Wellness Partnerships**.
+| GSR Sensor            | Rs.700        |
+| LM35 Temperature Sensor | Rs.400        |
+| Heart Rate Sensor     | Rs.300        |
+| Peltier Module        | Rs.250        |
+| Piezo Fan        | Rs.1500         |
+| Power Unit (Battery) | Rs.1200        |
+| Micro-controller    | Rs.700        |
+| Casing & Assembly    | Rs.1500        |
+| **Total Cost**       | **Rs.6550**    |
 
 ---
 
