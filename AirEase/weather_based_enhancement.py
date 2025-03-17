@@ -4,7 +4,7 @@ import time
 
 # ✅ OpenWeather API Configuration
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
-API_KEY = "65d8bfaa75447dc71fef7a5c95ca9c4f"  # Ensure no extra spaces/newlines
+API_KEY = "<weather API>"  # Ensure no extra spaces/newlines
 CITY = "London"  # Change to your city
 DEVICE_URL = "http://raspberrypi.local:5000/trigger_airflow"  # Raspberry Pi API URL
 
